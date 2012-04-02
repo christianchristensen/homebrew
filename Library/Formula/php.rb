@@ -5,6 +5,8 @@ def mysql_installed?
 end
 
 class Php <Formula
+  # This version on osx has some trouble with APC
+  # https://bugs.php.net/bug.php?id=61238
   url 'http://www.php.net/get/php-5.4.0.tar.bz2/from/this/mirror'
   homepage 'http://php.net/'
   md5 '04bb6f9d71ea86ba05685439d50db074'
